@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HPS Roofing | Roof Replacement & Repairs in Kyle, TX</title>
+<meta name="description" content="HPS Roofing in Kyle, TX — residential and commercial re-roofing, repairs, gutters and storm restoration. We handle your insurance claim start to finish. Call (210) 724-7794.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#14161c; --ink2:#2a2e38; --mut:#5b6270; --bg:#f7f6f3; --card:#ffffff;
+  --brand:#ea580c; --brand-d:#c2410c; --gold:#f59e0b; --line:#e8e4dc;
+  --radius:14px; --shadow:0 10px 30px rgba(20,22,28,.10);
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Inter',system-ui,sans-serif;color:var(--ink);background:var(--bg);line-height:1.6}
+h1,h2,h3{font-family:'Sora',sans-serif;line-height:1.15;letter-spacing:-.01em}
+.wrap{max-width:1140px;margin:0 auto;padding:0 22px}
+section{padding:84px 0}
+/* nav */
+nav{position:sticky;top:0;z-index:50;background:rgba(20,22,28,.96);backdrop-filter:blur(8px);border-bottom:1px solid rgba(255,255,255,.08)}
+.nav-in{display:flex;align-items:center;justify-content:space-between;height:68px}
+.logo{color:#fff;font-family:'Sora';font-weight:800;font-size:1.25rem;text-decoration:none}
+.logo span{color:var(--gold)}
+.links{display:flex;gap:28px;align-items:center}
+.links a{color:#d7dae0;text-decoration:none;font-weight:500;font-size:.95rem}
+.links a:hover{color:#fff}
+.btn{display:inline-block;background:var(--brand);color:#fff;font-weight:700;text-decoration:none;padding:13px 26px;border-radius:10px;border:0;cursor:pointer;font-size:1rem;transition:.2s}
+.btn:hover{background:var(--brand-d);transform:translateY(-1px)}
+.btn.nav-cta{padding:10px 20px;font-size:.92rem}
+.burger{display:none;background:none;border:0;color:#fff;font-size:1.6rem;cursor:pointer}
+/* hero */
+.hero{background:linear-gradient(135deg,#14161c 0%,#232733 55%,#3a2a1a 100%);color:#fff;padding:110px 0 96px;position:relative;overflow:hidden}
+.hero::after{content:"";position:absolute;inset:0;background:radial-gradient(700px 340px at 85% 20%,rgba(245,158,11,.22),transparent 60%);pointer-events:none}
+.hero .wrap{position:relative;z-index:1}
+.kicker{display:inline-block;background:rgba(245,158,11,.16);color:var(--gold);font-weight:700;font-size:.82rem;letter-spacing:.12em;text-transform:uppercase;padding:8px 16px;border-radius:999px;margin-bottom:22px;border:1px solid rgba(245,158,11,.35)}
+.hero h1{font-size:clamp(2.2rem,5.2vw,3.6rem);max-width:16ch;margin-bottom:18px}
+.hero h1 em{font-style:normal;color:var(--gold)}
+.hero p.lead{font-size:1.15rem;color:#c9cdd6;max-width:56ch;margin-bottom:32px}
+.cta-row{display:flex;gap:14px;flex-wrap:wrap}
+.btn.ghost{background:transparent;border:2px solid rgba(255,255,255,.35);color:#fff}
+.btn.ghost:hover{border-color:#fff;background:rgba(255,255,255,.08)}
+.hero-meta{margin-top:34px;display:flex;gap:26px;flex-wrap:wrap;color:#aeb4c0;font-size:.92rem}
+.hero-meta strong{color:#fff}
+/* trust strip */
+.strip{background:#fff;border-bottom:1px solid var(--line);padding:20px 0}
+.strip .wrap{display:flex;gap:34px;flex-wrap:wrap;align-items:center;justify-content:center}
+.strip span{font-weight:700;color:var(--ink2);font-size:.95rem;letter-spacing:.02em;display:flex;align-items:center;gap:8px}
+.strip .dot{color:var(--brand);font-size:1.2rem}
+/* services */
+.sec-head{text-align:center;max-width:640px;margin:0 auto 48px}
+.sec-head .eyebrow{color:var(--brand);font-weight:700;text-transform:uppercase;letter-spacing:.12em;font-size:.8rem}
+.sec-head h2{font-size:clamp(1.7rem,3.6vw,2.5rem);margin:10px 0 12px}
+.sec-head p{color:var(--mut)}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:22px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:32px 28px;box-shadow:var(--shadow);transition:.25s}
+.card:hover{transform:translateY(-5px);box-shadow:0 18px 40px rgba(20,22,28,.14)}
+.icon{width:52px;height:52px;border-radius:12px;background:linear-gradient(135deg,var(--brand),var(--gold));display:flex;align-items:center;justify-content:center;margin-bottom:18px}
+.icon svg{width:26px;height:26px;stroke:#fff;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.card h3{font-size:1.15rem;margin-bottom:10px}
+.card p{color:var(--mut);font-size:.96rem}
+/* about */
+.about{background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.about-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:56px;align-items:center}
+.about h2{font-size:clamp(1.7rem,3.4vw,2.4rem);margin:10px 0 16px}
+.about p{color:var(--mut);margin-bottom:14px}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:26px}
+.stat{background:var(--bg);border:1px solid var(--line);border-radius:12px;padding:18px;text-align:center}
+.stat b{display:block;font-family:'Sora';font-size:1.5rem;color:var(--brand-d)}
+.stat small{color:var(--mut)}
+.about-card{background:linear-gradient(150deg,#1d212b,#2c3140);color:#fff;border-radius:var(--radius);padding:38px 34px;box-shadow:var(--shadow)}
+.about-card h3{color:var(--gold);margin-bottom:12px;font-size:1.3rem}
+.about-card p{color:#c9cdd6;font-size:.98rem}
+.about-card .q{font-size:1.05rem;color:#fff;font-style:italic;border-left:3px solid var(--gold);padding-left:16px;margin:18px 0}
+/* process */
+.steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:20px;counter-reset:step}
+.step{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:30px 26px;position:relative;box-shadow:var(--shadow)}
+.step::before{counter-increment:step;content:counter(step);position:absolute;top:-20px;left:24px;width:40px;height:40px;border-radius:50%;background:var(--brand);color:#fff;font-family:'Sora';font-weight:800;display:flex;align-items:center;justify-content:center;font-size:1.1rem}
+.step h3{font-size:1.05rem;margin:8px 0 8px}
+.step p{color:var(--mut);font-size:.93rem}
+/* contact */
+.contact{background:linear-gradient(135deg,#14161c,#2b2118);color:#fff;text-align:center}
+.contact h2{font-size:clamp(1.8rem,4vw,2.6rem);margin-bottom:14px}
+.contact h2 em{font-style:normal;color:var(--gold)}
+.contact p{color:#c9cdd6;max-width:52ch;margin:0 auto 30px}
+.big-phone{display:inline-block;font-family:'Sora';font-weight:800;font-size:clamp(1.6rem,4.4vw,2.6rem);color:#fff;text-decoration:none;background:rgba(255,255,255,.07);border:2px solid rgba(245,158,11,.5);padding:18px 40px;border-radius:16px;transition:.2s}
+.big-phone:hover{background:var(--brand);border-color:var(--brand)}
+.contact .hours{margin-top:20px;color:#aeb4c0;font-size:.95rem}
+/* footer */
+footer{background:#0e1015;color:#8b91a0;padding:40px 0;font-size:.9rem}
+.foot{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;align-items:center}
+.foot a{color:#c9cdd6;text-decoration:none}
+/* reveal */
+.rv{opacity:0;transform:translateY(24px);transition:opacity .6s ease,transform .6s ease}
+.rv.on{opacity:1;transform:none}
+@media(max-width:860px){
+  .links{display:none;position:absolute;top:68px;left:0;right:0;background:#14161c;flex-direction:column;padding:18px;gap:16px;border-bottom:1px solid rgba(255,255,255,.1)}
+  .links.open{display:flex}
+  .burger{display:block}
+  .about-grid{grid-template-columns:1fr}
+  section{padding:64px 0}
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="wrap nav-in">
+    <a class="logo" href="#top">HPS <span>Roofing</span></a>
+    <div class="links" id="navLinks">
+      <a href="#services">Services</a>
+      <a href="#about">About</a>
+      <a href="#process">Our Process</a>
+      <a href="#contact">Contact</a>
+      <a class="btn nav-cta" href="tel:+12107247794">Call (210) 724-7794</a>
+    </div>
+    <button class="burger" id="burger" aria-label="Menu">☰</button>
+  </div>
+</nav>
+
+<header class="hero" id="top">
+  <div class="wrap">
+    <span class="kicker">Kyle, TX · Residential &amp; Commercial</span>
+    <h1>A better roof, handled <em>start to finish.</em></h1>
+    <p class="lead">HPS Roofing specializes in insurance-claim roof replacements and repairs. From the first inspection to the final nail sweep, we make the process comfortable — and the roof exceptional. Quality, not quantity.</p>
+    <div class="cta-row">
+      <a class="btn" href="tel:+12107247794">📞 Call (210) 724-7794</a>
+      <a class="btn ghost" href="#services">See Our Services</a>
+    </div>
+    <div class="hero-meta">
+      <span><strong>Insurance claims</strong> handled for you</span>
+      <span><strong>Residential</strong> &amp; <strong>commercial</strong></span>
+      <span><strong>Free</strong> roof inspections</span>
+    </div>
+  </div>
+</header>
+
+<div class="strip">
+  <div class="wrap">
+    <span><span class="dot">●</span> GAF Materials</span>
+    <span><span class="dot">●</span> Owens Corning</span>
+    <span><span class="dot">●</span> ABC Supply Co.</span>
+    <span><span class="dot">●</span> Quality, Not Quantity</span>
+  </div>
+</div>
+
+<section id="services">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <div class="eyebrow">What we do</div>
+      <h2>Roofing services for every need</h2>
+      <p>Insurance or cash jobs — residential and commercial. One crew, one standard: done right.</p>
+    </div>
+    <div class="grid">
+      <div class="card rv">
+        <div class="icon"><svg viewBox="0 0 24 24"><path d="M3 11l9-7 9 7"/><path d="M5 10v10h14V10"/><path d="M10 20v-6h4v6"/></svg></div>
+        <h3>Re-Roofing</h3>
+        <p>Full residential and commercial roof replacements, through your insurance claim or as a cash job — with architectural shingles standard on most projects.</p>
+      </div>
+      <div class="card rv">
+        <div class="icon"><svg viewBox="0 0 24 24"><path d="M14.7 6.3a4 4 0 0 0-5.4 5.4L3 18v3h3l6.3-6.3a4 4 0 0 0 5.4-5.4l-2.6 2.6-2.5-.7-.7-2.5z"/></svg></div>
+        <h3>Roof Repairs</h3>
+        <p>Leak repairs and storm-damage fixes for homes and businesses. We find the real source of the problem — not just the symptom.</p>
+      </div>
+      <div class="card rv">
+        <div class="icon"><svg viewBox="0 0 24 24"><path d="M12 2l8 4v6c0 5-3.5 8.5-8 10-4.5-1.5-8-5-8-10V6z"/><path d="M9 12l2 2 4-4"/></svg></div>
+        <h3>Shingle · Metal · Tile · TPO · Modified</h3>
+        <p>Every major roofing system: architectural shingles, standing-seam metal, tile, commercial TPO, and modified bitumen peel-and-stick.</p>
+      </div>
+      <div class="card rv">
+        <div class="icon"><svg viewBox="0 0 24 24"><path d="M4 17h16M6 17V9l6-4 6 4v8"/><path d="M4 21h16"/></svg></div>
+        <h3>Seamless Gutter Installation</h3>
+        <p>New gutters, full replacements, and repairs using seamless gutter systems — measured and formed on site for a perfect fit.</p>
+      </div>
+      <div class="card rv">
+        <div class="icon"><svg viewBox="0 0 24 24"><path d="M12 3v10"/><path d="M7 8l5-5 5 5"/><path d="M4 15v4a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-4"/></svg></div>
+        <h3>Interior Storm Repair</h3>
+        <p>Storm damage doesn't stop at the shingles. We repair interior damage caused by roof leaks and storms, so your home is whole again.</p>
+      </div>
+      <div class="card rv">
+        <div class="icon"><svg viewBox="0 0 24 24"><path d="M9 12h6M9 16h4"/><path d="M13 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V9z"/><path d="M13 3v6h6"/></svg></div>
+        <h3>Insurance Claim Help</h3>
+        <p>We work your insurance claim from inspection to install, making sure you get the highest-quality roof your claim allows.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="about" id="about">
+  <div class="wrap about-grid">
+    <div class="rv">
+      <div class="eyebrow" style="color:var(--brand);font-weight:700;text-transform:uppercase;letter-spacing:.12em;font-size:.8rem">About HPS Roofing</div>
+      <h2>A local roofer built on customer service</h2>
+      <p>Owner Pat Spurlin grew up running his family's commercial development and retail businesses in New Mexico before moving to Texas in 2009. After years as an independent contractor working alongside local and national roofing companies, he started HPS Roofing in early 2021 — bringing his own style of customer service and quality workmanship to the industry.</p>
+      <p>Our goal is simple: make sure every homeowner is comfortable with all aspects of the roofing process, from the insurance paperwork to the final walkthrough.</p>
+      <div class="stats">
+        <div class="stat"><b>2021</b><small>Founded in Kyle, TX</small></div>
+        <div class="stat"><b>5+</b><small>Roofing systems installed</small></div>
+        <div class="stat"><b>100%</b><small>Quality-first promise</small></div>
+      </div>
+    </div>
+    <div class="about-card rv">
+      <h3>Our promise</h3>
+      <p class="q">"We believe in quality, not quantity."</p>
+      <p>Every project gets full property protection, decking stripped and inspected, synthetic underlayment, proper starter and drip edge, matched venting, ridge ventilation where possible — and a magnetic sweep of your entire property when we're done.</p>
+    </div>
+  </div>
+</section>
+
+<section id="process">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <div class="eyebrow">How it works</div>
+      <h2>Our installation process</h2>
+      <p>The same careful steps on every roof — no shortcuts, no surprises.</p>
+    </div>
+    <div class="steps">
+      <div class="step rv"><h3>Free inspection</h3><p>We assess your roof and review your insurance claim (or cash options) so you know exactly where you stand.</p></div>
+      <div class="step rv"><h3>Protect your property</h3><p>Tarps and plywood shield landscaping, siding, and everything around your home before work begins.</p></div>
+      <div class="step rv"><h3>Strip to the decking</h3><p>Old roofing comes off completely so damaged decking can be found and replaced — never roofed over.</p></div>
+      <div class="step rv"><h3>Seal it right</h3><p>Synthetic underlayment, starter strip for wind resistance, drip edge, and replaced valley metal.</p></div>
+      <div class="step rv"><h3>Install &amp; ventilate</h3><p>Architectural shingles, matched venting, and ridge venting where space allows for a longer roof life.</p></div>
+      <div class="step rv"><h3>Spotless cleanup</h3><p>Debris blown off, gutters cleared, and the whole property swept with a magnet for nails.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <div class="wrap rv">
+    <div class="eyebrow" style="color:var(--gold);font-weight:700;text-transform:uppercase;letter-spacing:.12em;font-size:.8rem">Get in touch</div>
+    <h2>Let's get your roofing needs <em>taken care of.</em></h2>
+    <p>Call now for a free inspection. Tell us whether you're using insurance or it's a cash job, and we'll take it from there.</p>
+    <a class="big-phone" href="tel:+12107247794">(210) 724-7794</a>
+    <p class="hours">Serving Kyle, TX and surrounding Central Texas communities</p>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap foot">
+    <span>© 2026 HPS Roofing · Kyle, TX 78640</span>
+    <span><a href="tel:+12107247794">(210) 724-7794</a> · <a href="https://www.hpsroofers.com/">hpsroofers.com</a></span>
+  </div>
+</footer>
+
+<script>
+const burger=document.getElementById('burger'),links=document.getElementById('navLinks');
+burger.addEventListener('click',()=>links.classList.toggle('open'));
+links.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>links.classList.remove('open')));
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('on');io.unobserve(e.target)}}),{threshold:.12});
+document.querySelectorAll('.rv').forEach(el=>io.observe(el));
+</script>
+</body>
+</html>
